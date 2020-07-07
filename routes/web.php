@@ -20,7 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get('/post/{slug}','PostController@getPostBySlug');
 
 
 Route::group(['prefix' => 'admin'], function () {

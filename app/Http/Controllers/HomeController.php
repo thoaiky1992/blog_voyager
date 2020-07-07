@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Category;
 class HomeController extends Controller
 {
     /**
@@ -24,6 +25,8 @@ class HomeController extends Controller
     public function index()
     {
         $post_random = Post::inRandomOrder()->limit(3)->get();
-        return view('home',compact('post_random'));
+        $posts = Post::orderBy('id','DESC')->take(9)->get();
+        $categories = Category::TotalPost()->get();
+        return view('home',compact('post_random','posts','categories'));
     }
 }
