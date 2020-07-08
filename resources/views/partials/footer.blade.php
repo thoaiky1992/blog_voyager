@@ -12,7 +12,7 @@
                         <p>Điện thoại : +077 769 4436</p>
                     </li>
                     <li>
-                        <p>Hòm thư : <a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9d0d7dfd6f9dad6d5d6cbd5d0db97dad6d4">[thoaiky1992@gmail.com]</a></p>
+                        <p>Hòm thư : <a  class="__cf_email__" data-cfemail="b9d0d7dfd6f9dad6d5d6cbd5d0db97dad6d4">[thoaiky1992@gmail.com]</a></p>
                     </li>
                 </ul>
             </div>
@@ -36,7 +36,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <div class="copyright_part">
-                        <p class="footer-text m-0">Copyright © 2020 All rights reserved <span class="px-2">|</span>  <a href="https://colorlib.com/">Kỳ Smile</a></p>
+                        <p class="footer-text m-0">Copyright © 2020 All rights reserved <span class="px-2">|</span>  
+                            <a  href="https://cv.kysmile.tk/" target="_blank">Kỳ Smile</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-right">

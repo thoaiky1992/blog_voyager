@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index-2.html"> <img src="{{ asset('img/logo.png') }}" alt="logo"> </a>
+                    <a class="navbar-brand" href="/"> <img src="{{ asset('img/logo.png') }}" alt="logo"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,15 +36,8 @@
                     </div>
                     <div class="header_social_icon d-none d-lg-block">
                         <ul>
-                            <li>
-                                <div id="wrap">
-                                    <form action="#" autocomplete="on">
-                                        <input id="search" name="search" type="text" placeholder="Search here"><span class="ti-search"></span>
-                                    </form>
-                                </div>
-                            </li>
                             <li><a href="#" class="d-none d-lg-block"><i class="ti-facebook"></i></a></li>
-                            <li><a href="#" class="d-none d-lg-block"> <i class="ti-twitter-alt"></i></a></li>
+                            <li><a href="#" class="d-none d-lg-block"><i class="ti-twitter-alt"></i></a></li>
                             <li><a href="#" class="d-none d-lg-block"><i class="ti-instagram"></i></a></li>
                             <li><a href="#" class="d-none d-lg-block"><i class="ti-skype"></i></a></li>
                         </ul>

@@ -20,9 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/post/{slug}','PostController@getPostBySlug');
-
-
+Route::get('/post/{slug}','PostController@getPostBySlug')->name('detail_post');
+Route::post('/comment/create','CommentController@createComment')->name('create_comment');
+Route::get('/lien-he','ContactController@index');
+Route::post('/contact/create','ContactController@create')->name('create_contact');
+Route::get('/the-loai/{slug}','PostController@getPostByCategory');
+Route::get('/search','PostController@search')->name('search_post');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
