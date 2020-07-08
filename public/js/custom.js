@@ -11,7 +11,7 @@ window.onload = function (){
         let email = $('#email_subscribe').val();
 
         $.ajax({
-            url : 'http://localhost:8000/create-subscribe',
+            url : 'http://blog.kysmile.tk/create-subscribe',
             type : 'GET',
             data : { email : email },
             dataType : 'JSON',
