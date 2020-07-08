@@ -1,2 +1,2 @@
-<h2>Th�ng b�o b�i vi?t m?i t? Blog K?Smile:</h2>
-<p>+ Link b�i vi?t : <a href="{{route('post_detail',$post->slug)}}">{{$post->title}}</a></p>
+<h2>Thông báo bài viết mới từ Blog Kỳ Smile:</h2>
+<p>+ Link bài viết : <a href="{{ URL::to('/post/'.$post->slug) }}">{{$post->title}}</a></p>
