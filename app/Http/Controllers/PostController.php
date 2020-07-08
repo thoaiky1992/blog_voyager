@@ -24,7 +24,7 @@ class PostController extends Controller
     public function search(Request $request){
         $categories = Category::TotalPost()->get();
         $post_random = Post::inRandomOrder()->limit(3)->get();
-        $posts = Post::where('title', 'LIKE', "%$request->p%")->TotalComments()->paginate(9);
+        $posts = Post::where('title', 'LIKE', "%$request->p%")->TotalComments()->paginate();
         return view('search',compact(['posts','count_post','categories','post_random']));
     }
 }

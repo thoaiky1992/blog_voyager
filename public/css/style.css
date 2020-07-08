@@ -5380,5 +5380,8 @@ h6 {
   color: #b9babb;
   margin-left: 20px;
 }
-
+.swal-footer{
+  display: flex;
+  justify-content: center;
+}
 /*# sourceMappingURL=../css/style.map */

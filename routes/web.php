@@ -26,6 +26,7 @@ Route::get('/lien-he','ContactController@index');
 Route::post('/contact/create','ContactController@create')->name('create_contact');
 Route::get('/the-loai/{slug}','PostController@getPostByCategory');
 Route::get('/search','PostController@search')->name('search_post');
+Route::get('/create-subscribe','HomeController@createSubscribe');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

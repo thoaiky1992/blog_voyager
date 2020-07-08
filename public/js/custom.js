@@ -1,17 +1,37 @@
-(function ($) {
-  "use strict";
-  // menu fixed js code
-  $(window).scroll(function () {
-    var window_top = $(window).scrollTop() + 1;
-    if (window_top > 50) {
-      $('.main_menu').addClass('menu_fixed animated fadeInDown');
-    } else {
-      $('.main_menu').removeClass('menu_fixed animated fadeInDown');
+
+window.onload = function (){
+    let list = document.getElementsByClassName('banner_redirect');
+    for(let i = 0 ; i < list.length ; i++){
+        list[i].addEventListener('click',function(){
+            let slug = list[i].getAttribute('data-slug');
+            window.location.href = '/post/' + slug;
+        })
     }
-  });
-  
-  if (document.getElementById('default-select')) {
-		$('select').niceSelect();
-  }
-  
-}(jQuery));
+    $('.submit_subscribe').on('click',function(){
+        let email = $('#email_subscribe').val();
+
+        $.ajax({
+            url : 'http://localhost:8000/create-subscribe',
+            type : 'GET',
+            data : { email : email },
+            dataType : 'JSON',
+            success : function (data){
+                swal({
+                    title: data.message,
+                    icon: "success",
+                    button: "Đóng",
+                });
+            },
+            error: function (res) {
+                swal({
+                    title: res.responseJSON.errors.email[0],
+                    icon: "error",
+                    button: "Đóng",
+                });
+            }
+        })
+
+    })
+}
+
+

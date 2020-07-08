@@ -54,10 +54,10 @@
         </div>
         <div class="social_share_icon tags">
             <ul class="list-unstyled">
-                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ky.smile.5/" target="_blank"><i class="ti-facebook"></i></a></li>
+                <li><a href="https://google.com"><i class="ti-google" target="_blank"></i></a></li>
+                <li><a ><i class="ti-pinterest"></i></a></li>
+                <li><a ><i class="ti-instagram"></i></a></li>
             </ul>
         </div>
     </div>

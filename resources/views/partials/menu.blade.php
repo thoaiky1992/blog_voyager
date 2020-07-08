@@ -36,10 +36,10 @@
                     </div>
                     <div class="header_social_icon d-none d-lg-block">
                         <ul>
-                            <li><a href="#" class="d-none d-lg-block"><i class="ti-facebook"></i></a></li>
-                            <li><a href="#" class="d-none d-lg-block"><i class="ti-twitter-alt"></i></a></li>
-                            <li><a href="#" class="d-none d-lg-block"><i class="ti-instagram"></i></a></li>
-                            <li><a href="#" class="d-none d-lg-block"><i class="ti-skype"></i></a></li>
+                            <li><a href="https://www.facebook.com/ky.smile.5/" target="_blank" class="d-none d-lg-block"><i class="ti-facebook"></i></a></li>
+                            <li><a href="https://google.com" target="_blank" class="d-none d-lg-block"><i class="ti-google"></i></a></li>
+                            <li><a class="d-none d-lg-block" target="_blank"><i class="ti-github"></i></a></li>
+                            <li><a class="d-none d-lg-block" target="_blank"><i class="ti-skype"></i></a></li>
                         </ul>
                     </div>
                 </nav>

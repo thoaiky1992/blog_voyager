@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{{asset('css/liner_icon.css')}}">
         <link rel="stylesheet" href="{{asset('css/search.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         
     </head>
     <body>
@@ -26,18 +27,14 @@
 
         @include('partials.footer')
         {{-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> --}}
-        <script src="{{asset('js/jquery-3.5.1.min.js')}}" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script>
-        <script src="{{asset('js/popper.min.js')}}" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script>
-        <script src="{{asset('js/custom.js')}}" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script>
-        <script type="2311f11fc50d0ccb8924d0f9-text/javascript">
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'UA-23581568-13');
-        </script>
+        <script src="{{asset('js/jquery-3.5.1.js')}}" ></script>
+        <script src="{{asset('js/popper.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/custom.js')}}" ></script>
+        
+        {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="2311f11fc50d0ccb8924d0f9-text/javascript"></script> --}}
+        
+       
         {{-- <script src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="2311f11fc50d0ccb8924d0f9-|49" defer=""></script> --}}
     </body>
     <!-- Mirrored from colorlib.com/preview/theme/lifeleck/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2020 13:55:04 GMT -->
