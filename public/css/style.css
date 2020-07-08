@@ -9,7 +9,9 @@ body {
   margin: 0;
   font-size: 14px;
 }
-
+img{
+  object-fit: cover !important;
+}
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_common.scss */
 .message_submit_form:focus {
   outline: none;
