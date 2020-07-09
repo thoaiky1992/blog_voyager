@@ -9,7 +9,7 @@
     </div>
     <div class="single_sidebar_wiget">
         <div class="sidebar_tittle">
-            <h3>Categories</h3>
+            <h3>Thể loại</h3>
         </div>
         <div class="single_catagory_item category">
             <ul class="list-unstyled">
@@ -21,7 +21,7 @@
     </div>
     <div class="single_sidebar_wiget">
         <div class="sidebar_tittle">
-            <h3>Popular Feeds</h3>
+            <h3>Bài viết phổ biến</h3>
         </div>
         @foreach ($post_random as $post)
             <div class="single_catagory_post post_2 ">
