@@ -46,7 +46,7 @@
                             <div class="single-comment justify-content-between d-flex">
                                 <div class="user justify-content-between d-flex">
                                     <div class="thumb">
-                                        <img src="{{ asset('img/comment/comment_1.png') }}" alt="">
+                                        <img src="{{ asset('img/comment/sad.jpg') }}" alt="">
                                     </div>
                                     <div class="desc">
                                         <p class="comment">{{ $cmt->content }}</p>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="load_btn">
-                            <button type="submit" style="border:0;outline: none;border-color:unset;background-color: unset;padding:0;"> <a class="btn_1">SUBMIT </a></button>
+                            <button type="submit" style="border:0;outline: none;border-color:unset;background-color: unset;padding:0;"> <a class="btn_1">G?i</a></button>
                             
                         </div>
                     </form>
