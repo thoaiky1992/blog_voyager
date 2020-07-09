@@ -30,7 +30,9 @@ window.onload = function (){
                 });
             }
         })
-
+    })
+    $('#submit_search').on('click',function(){
+        $('#form_search').submit();
     })
 }
 

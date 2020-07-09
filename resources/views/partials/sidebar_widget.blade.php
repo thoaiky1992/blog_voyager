@@ -7,14 +7,6 @@
             </div>
         </form>
     </div>
-    <script>
-        window.onload = function(){
-            document.getElementById('submit_search').addEventListener('click',function(){
-                let form_search = document.querySelector('#form_search');
-                form_search.submit();
-            })
-        }
-    </script>
     <div class="single_sidebar_wiget">
         <div class="sidebar_tittle">
             <h3>Categories</h3>
