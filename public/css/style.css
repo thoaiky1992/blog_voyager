@@ -5392,6 +5392,9 @@ h6 {
 .comments-area .thumb img{
   height:70px;
 }
+.blog_area .load_btn{
+ margin-top:0px !important;
+}
 /*# sourceMappingURL=../css/style.map */
 @media only screen and (max-width: 480px) {
   .banner_post{
