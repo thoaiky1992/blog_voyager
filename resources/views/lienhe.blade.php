@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="load_btn">
-                        <button type="submit" style="border:0;outline: none;border-color:unset;background-color: unset;padding:0;"><a class="btn_1">Send Message </a></button>
+                        <button type="submit" style="border:0;outline: none;border-color:unset;background-color: unset;padding:0;"><a class="btn_1">Gửi </a></button>
                     </div>
                 </form>
             </div>
