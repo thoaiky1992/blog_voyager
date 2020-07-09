@@ -22,7 +22,9 @@
             <div class="col-lg-8">
                 <div class="row">
                     @if ($posts->count() == 0)
-                        <h1>không tìm thấy kết quả nào phù hợp ...</h1>
+                        <div class="col-12">
+                            <h1>không tìm thấy kết quả nào phù hợp ...</h1>
+                        </div>
                     @else 
                         @foreach ($posts as $key => $post)
                             <div class="col-lg-6 col-sm-6">
