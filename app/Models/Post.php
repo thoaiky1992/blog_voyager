@@ -10,13 +10,22 @@ use Illuminate\Support\Facades\Auth;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\Resizable;
 use TCG\Voyager\Traits\Translatable;
+
 class Post extends Model
 {
+
+    use Translatable;
+    use Resizable;
+
+    protected $translatable = ['title', 'seo_title', 'excerpt', 'body', 'slug', 'meta_description', 'meta_keywords'];
+
+    const PUBLISHED = 'PUBLISHED';
     protected $guarded = [];
 
     protected $table = 'posts';
 
     protected $with = ['comments'];
+    
 
     /**
      * The "booting" method of the model.
@@ -27,7 +36,6 @@ class Post extends Model
     {
         parent::boot();
         static::created(function ($post) {
-        
             dispatch(new SendMail($post));
         });
 
@@ -41,12 +49,7 @@ class Post extends Model
         $query->withCount(['comments']);
     }
 
-    use Translatable;
-    use Resizable;
-
-    protected $translatable = ['title', 'seo_title', 'excerpt', 'body', 'slug', 'meta_description', 'meta_keywords'];
-
-    const PUBLISHED = 'PUBLISHED';
+   
 
 
     public function save(array $options = [])
