@@ -1,39 +1,20 @@
+function tinymce_init_callback(editor) {
+    editor.remove();
+    editor = null;
 
-window.onload = function (){
-    let list = document.getElementsByClassName('banner_redirect');
-    for(let i = 0 ; i < list.length ; i++){
-        list[i].addEventListener('click',function(){
-            let slug = list[i].getAttribute('data-slug');
-            window.location.href = '/post/' + slug;
-        })
-    }
-    $('.submit_subscribe').on('click',function(){
-        let email = $('#email_subscribe').val();
-
-        $.ajax({
-            url : 'http://blog.kysmile.tk/create-subscribe',
-            type : 'GET',
-            data : { email : email },
-            dataType : 'JSON',
-            success : function (data){
-                swal({
-                    title: data.message,
-                    icon: "success",
-                    button: "Đóng",
-                });
-            },
-            error: function (res) {
-                swal({
-                    title: res.responseJSON.errors.email[0],
-                    icon: "error",
-                    button: "Đóng",
-                });
-            }
-        })
-    })
-    $('#submit_search').on('click',function(){
-        $('#form_search').submit();
+    tinymce.init({
+        menubar: false,
+        selector: 'textarea',
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table paste code help wordcount',
+            'legacyoutput'
+        ],
+        toolbar1:
+            'undo redo | fontselect | fontsizeselect | styleselect |' +
+            'forecolor | bold italic underline | numlist bullist',
+        toolbar2: 'alignleft aligncenter alignright alignjustify |' +
+            'outdent indent | link image | code',
     })
 }
-
-
